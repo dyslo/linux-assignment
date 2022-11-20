@@ -44,7 +44,7 @@
                     }
 
                     res.forEach((e) => {
-                        var dom = "<tr><td>" + String(e.id) + "</td>" + "<td>" + String(e.name) + "<td>" + String(e.age) + "</td>" + "<td>" + String(e.gender) + "</td></tr>"; 
+                        var dom = "<tr><td>" + String(e.id) + "</td>" + "<td>" + String(e.name) + "<td>" + String(e.age) + "세</td>" + "<td>" + String(e.gender) + "</td></tr>"; 
                         search_result.append(dom);
                     })
                 })
