@@ -19,7 +19,7 @@
                         <label for="radio-btn-1">남자</label>
                     </div>
                     <div class="radio">
-                        <input type="radio" id="radio-btn-2" name="gender" value="남자">
+                        <input type="radio" id="radio-btn-2" name="gender" value="여자">
                         <label for="radio-btn-2">여자</label>
                     </div>
                 </div>
