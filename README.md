@@ -1,6 +1,6 @@
-# 순천대학교 리눅스시스템 웹 서버 구축 과제 - Web File
+# 웹 서버 구축 과제 - Web File
 
-## Setup
+### Setup
 
 ```
 git clone https://github.com/dyslo/linux-assignment 폴더이름(optional)
