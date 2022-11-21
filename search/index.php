@@ -37,16 +37,17 @@
                     method: "GET",
                     dataType: "json"
                 }).done(function(res) {
+                    search_result.empty();
                     if(res.length === 0) {
                         var dom = "<tr><td colspan='4'>회원이 없습니다.</td></tr>";
                         search_result.append(dom);
                         return;
+                    } else {
+                        res.forEach((e) => {
+                            var dom = "<tr><td>" + String(e.id) + "</td>" + "<td>" + String(e.name) + "<td>" + String(e.age) + "세</td>" + "<td>" + String(e.gender) + "</td></tr>"; 
+                            search_result.append(dom);
+                        })
                     }
-
-                    res.forEach((e) => {
-                        var dom = "<tr><td>" + String(e.id) + "</td>" + "<td>" + String(e.name) + "<td>" + String(e.age) + "세</td>" + "<td>" + String(e.gender) + "</td></tr>"; 
-                        search_result.append(dom);
-                    })
                 })
             }
         </script>
